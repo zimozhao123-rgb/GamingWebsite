@@ -10,7 +10,7 @@
 <body>
   <div class="noise"></div>
   <header class="topbar">
-    <button class="brand" data-home aria-label="Pixel Party home"><span class="brand-mark">P</span>PIXEL PARTY</button>
+    <a class="brand" href="index.html" aria-label="Pixel Party home"><span class="brand-mark">P</span>PIXEL PARTY</a>
     <div class="status"><i></i> ALL SYSTEMS GO</div>
   </header>
 
@@ -22,46 +22,22 @@
         <p class="intro">Three instant games. Zero downloads. Pick a challenge and jump straight in.</p>
       </div>
       <div class="game-grid">
-        <button class="game-card bike-card" data-game="bike">
+        <a class="game-card bike-card" href="bike.html">
           <div class="card-art bike-art"><span class="sun"></span><span class="mountain one"></span><span class="mountain two"></span><span class="rider">●<b>╱╲</b></span><span class="track"></span><em>01</em></div>
           <div class="card-copy"><span>RACING / SKILL</span><h2>VEX X3M 3</h2><p>Hit the ramps. Beat the clock.</p><b class="play">PLAY NOW <i>→</i></b></div>
-        </button>
-        <button class="game-card chess-card" data-game="chess">
+        </a>
+        <a class="game-card chess-card" href="chess.html">
           <div class="card-art chess-art"><span>♞</span><em>02</em></div>
           <div class="card-copy"><span>STRATEGY / 2 PLAYER</span><h2>CHESS</h2><p>Think ahead. Own the board.</p><b class="play">PLAY NOW <i>→</i></b></div>
-        </button>
-        <button class="game-card ttt-card" data-game="ttt">
+        </a>
+        <a class="game-card ttt-card" href="tic-tac-toe.html">
           <div class="card-art ttt-art"><div>×<i>○</i><i>○</i>×<i>×</i>○</div><em>03</em></div>
           <div class="card-copy"><span>CLASSIC / 2 PLAYER</span><h2>TIC TAC TOE</h2><p>Three in a row. No excuses.</p><b class="play">PLAY NOW <i>→</i></b></div>
-        </button>
+        </a>
       </div>
       <footer><span>3 GAMES LOADED</span><span>NO SIGN-UP · NO DOWNLOAD</span></footer>
     </section>
 
-    <section id="game" class="screen game-screen">
-      <div class="game-header">
-        <button class="back" data-home>← BACK TO ARCADE</button>
-        <div><p id="game-kicker">GAME 01</p><h1 id="game-title">VEX X3M 3</h1></div>
-        <button id="reset" class="reset">↻ RESTART</button>
-      </div>
-
-      <div id="bike-game" class="game-panel">
-        <div class="hud"><span>TIME <b id="bike-time">0.0</b></span><span>BEST <b id="bike-best">--</b></span></div>
-        <canvas id="bike-canvas" width="960" height="500"></canvas>
-        <div class="controls"><span><kbd>↑</kbd> GAS</span><span><kbd>↓</kbd> BRAKE</span><span><kbd>←</kbd><kbd>→</kbd> LEAN</span><span><kbd>R</kbd> RESET</span></div>
-      </div>
-
-      <div id="chess-game" class="game-panel board-layout">
-        <div class="side-panel"><p>TURN</p><strong id="chess-turn">WHITE</strong><span id="chess-message">Select a piece to move</span></div>
-        <div id="chess-board" class="chess-board" aria-label="Chess board"></div>
-      </div>
-
-      <div id="ttt-game" class="game-panel board-layout">
-        <div class="side-panel"><p>TURN</p><strong id="ttt-turn">X</strong><span id="ttt-message">Your move</span><div class="score"><div><b id="x-score">0</b><span>X WINS</span></div><div><b id="o-score">0</b><span>O WINS</span></div></div></div>
-        <div id="ttt-board" class="ttt-board" aria-label="Tic tac toe board"></div>
-      </div>
-    </section>
   </main>
-  <script src="script.js"></script>
 </body>
 </html>
